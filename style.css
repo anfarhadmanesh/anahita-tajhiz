@@ -1,7 +1,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: Yekan Bakh
+  font-family: 'YekanBakh', 'Vazirmatn', Tahoma, sans-serif;
   direction: rtl;
   background: #f4f7f9;
   color: #1f2937;
