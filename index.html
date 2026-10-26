@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>آناهیتا تجهیز | فروشگاه تجهیزات پزشکی</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="لوگو"><span class="logo-text">آناهیتا تجهیز</span>
+    </a>
+    <div class="search-box"><span class="search-icon">🔍</span><input type="text" id="search-input" placeholder="جستجوی محصول..."></div>
+        <nav class="menu">
+      <a href="index.html">خانه</a>
+      
+      <div class="dropdown">
+        <a href="category.html?main=تجهیزات پزشکی" class="dropbtn">تجهیزات پزشکی ▾</a>
+        <div class="dropdown-content">
+          <div class="mega-column">
+            <h4>تجهیزات پایش</h4>
+            <a href="category.html?cat=فشارسنج">فشارسنج</a>
+            <a href="category.html?cat=ترمومتر">ترمومتر</a>
+            <a href="category.html?cat=اکسیژن‌سنج">اکسیژن‌سنج</a>
+          </div>
+          
+          <div class="mega-column">
+            <h4>تجهیزات مصرفی</h4>
+            <a href="category.html?cat=سرنگ">سرنگ</a>
+          </div>
+        </div>
+      </div>
+      
+      <a href="#products">محصولات</a>
+      <a href="about-us.html" style="margin-right: 10px;">درباره ما</a>
+    </nav>
+    <div class="header-actions">
+      <a href="login.html" class="auth-btn">👤 ورود / ثبت‌نام</a>
+      <a href="cart.html" class="cart-icon">🛒 سبد (<span id="cart-count">0</span>)</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>آناهیتا تجهیز</h1>
+    <p>سلامت، با اطمینان — تجهیزات پزشکی با کیفیت</p>
+    <a href="#products" class="btn-primary">مشاهده محصولات</a>
+  </section>
+
+  <section class="categories container" id="categories">
+    <h2>دسته‌بندی‌ها</h2>
+    <div class="category-grid">
+      <a href="category.html?main=تجهیزات پزشکی" class="category-card">🩺<br>تجهیزات پزشکی</a>
+      <a href="category.html?main=لوازم پزشکی" class="category-card">🏃‍♂️<br>تجهیزات طبی ورزشی</a>
+      <a href="category.html?main=محصولات بهداشتی" class="category-card">🧼<br>محصولات بهداشتی</a>
+    </div>
+  </section>
+
+  <section class="products container" id="products">
+    <h2>محصولات پرفروش</h2>
+    <div class="product-grid" id="product-grid"></div>
+  </section>
+
+  <button class="news-toggle" id="news-toggle" onclick="toggleNews()">📰</button>
+  <aside class="news-sidebar" id="news-sidebar">
+    <div class="news-header">📰 اخبار و مقالات</div>
+    <a href="articles/pressure-guide.html" class="news-item"><h4>راهنمای کامل انتخاب فشارسنج خانگی</h4></a>
+    <a href="articles/thermometer.html" class="news-item"><h4>ترمومتر غیرتماسی چگونه کار می‌کند؟</h4></a>
+    <a href="articles/maintanance.html" class="news-item"><h4> نکات مهم در نگهداری تجهیزات پزشکی</h4></a>
+    <a href="articles/glucometer.html" class="news-item"><h4>راهنمای استفاده از گلوکومتر خانگی</h4></a>
+    <a href="articles/syringe-guide.html" class="news-item"><h4>راهنمای خرید سرنگ متناسب با نیاز شما</h4></a>
+  </aside>
+
+  <footer class="footer">
+    <p>© ۱۴۰۵ آناهیتا تجهیز — تمامی حقوق محفوظ است</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورود / ثبت‌نام | آناهیتا تجهیز</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: #f4f7f9;">
+
+  <div class="article-wrap" style="display: flex; justify-content: center; align-items: center; min-height: 80vh;">
+    <div class="auth-content" style="position: relative; display: block; width: 450px; max-width: 90%;">
+      
+      <a href="index.html" style="position: absolute; top: 15px; left: 15px; color: #6b7280; text-decoration: none; font-size: 18px;">✕</a>
+      
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tab-login" onclick="switchAuthTab('login')">ورود</button>
+        <button class="auth-tab" id="tab-register" onclick="switchAuthTab('register')">ثبت‌نام</button>
+      </div>
+
+      <form class="auth-form active" id="form-login">
+        <h3>خوش آمدید 👋</h3>
+        <input type="text" placeholder="شماره موبایل یا ایمیل" required>
+        <input type="password" placeholder="رمز عبور" required>
+        <button type="button" class="btn-primary" onclick="alert('ورود موفقیت‌آمیز بود (نمایشی)'); window.location.href='index.html';">ورود به حساب</button>
+      </form>
+
+      <form class="auth-form" id="form-register">
+        <h3>ایجاد حساب کاربری</h3>
+        <input type="text" placeholder="نام و نام خانوادگی" required>
+        <input type="text" placeholder="شماره موبایل" required>
+        <input type="password" placeholder="رمز عبور" required>
+        <button type="button" class="btn-primary" onclick="alert('ثبت‌نام موفقیت‌آمیز بود (نمایشی)'); window.location.href='index.html';">ثبت‌نام</button>
+      </form>
+
+    </div>
+  </div>
+
+  <script>
+    function switchAuthTab(tab) {
+      document.querySelectorAll('.auth-tab').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      document.querySelectorAll('.auth-form').forEach(function(frm) {
+        frm.classList.remove('active');
+      });
+
+      if (tab === 'login') {
+        document.getElementById('tab-login').classList.add('active');
+        document.getElementById('form-login').classList.add('active');
+      } else {
+        document.getElementById('tab-register').classList.add('active');
+        document.getElementById('form-register').classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>

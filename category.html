@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دسته‌بندی | آناهیتا تجهیز</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo"><img src="logo.png" alt="لوگو"><span class="logo-text">آناهیتا تجهیز</span></a>
+    <div class="search-box"><span class="search-icon">🔍</span><input type="text" id="search-input" placeholder="جستجوی محصول..."></div>
+    <nav class="menu"><a href="index.html">خانه</a><a href="index.html#products">محصولات</a></nav>
+    <div class="header-actions">
+      <a href="login.html" class="auth-btn">👤 ورود / ثبت‌نام</a>
+      <a href="cart.html" class="cart-icon">🛒 سبد (<span id="cart-count">0</span>)</a>
+    </div>
+  </header>
+
+  <section class="hero" style="padding: 40px 20px;">
+    <h1 id="category-title">در حال بارگذاری...</h1>
+    <p id="category-count"></p>
+    <a href="index.html" class="btn-primary">← بازگشت</a>
+  </section>
+
+  <section class="products container" id="products">
+    <div class="product-grid" id="product-grid"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

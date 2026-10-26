@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سبد خرید | آناهیتا تجهیز</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo"><img src="logo.png" alt="لوگو"><span class="logo-text">آناهیتا تجهیز</span></a>
+    <div class="search-box"><span class="search-icon">🔍</span><input type="text" id="search-input" placeholder="جستجوی محصول..."></div>
+    <nav class="menu"><a href="index.html">خانه</a><a href="index.html#products">محصولات</a></nav>
+    <div class="header-actions">
+      <a href="login.html" class="auth-btn">👤 ورود / ثبت‌نام</a>
+      <a href="cart.html" class="cart-icon">🛒 سبد (<span id="cart-count">0</span>)</a>
+    </div>
+  </header>
+  
+  <section class="container" style="padding: 40px 20px; max-width: 900px;">
+    <h2 style="margin-bottom: 20px; color: #0d9488;">سبد خرید شما</h2>
+    <div id="full-cart-container"></div>
+    <div id="cart-checkout" style="margin-top: 30px; background: #fff; padding: 20px; border-radius: 12px;">
+      <div style="display: flex; justify-content: space-between; font-size: 18px; font-weight: bold; margin-bottom: 20px;">
+        <span>مبلغ کل:</span><span id="full-cart-total" style="color: #0d9488;">۰ تومان</span>
+      </div>
+      <button class="btn-primary" style="width: 100%; background: #0d9488; color: white;">ادامه فرآیند خرید</button>
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
